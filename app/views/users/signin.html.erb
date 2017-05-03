@@ -1,0 +1,13 @@
+<h1>Users#SignIn</h1>
+<p>Find me in app/views/users/sign_in.html.erb</p>
+
+
+<%= simple_form_for(:user, :url => {:controller => 'users', :action => 'auth'}) do |f| %>
+
+<%= f.input :email %>
+<%= f.input :password %>
+<%= f.button :submit, "Log in" %>
+<br>
+<%= flash[:error] %>
+
+<% end %>

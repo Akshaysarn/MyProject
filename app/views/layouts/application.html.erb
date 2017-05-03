@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final</title>
+<style>
+body
+{
+	background-color:#eee;
+	margin:0px;
+	font-family:Arial;
+	font-size:14px;
+	line-height:22px;
+
+	
+}
+.container
+{
+	width:80%;
+
+}
+input
+{
+	width:90%;
+	height:20px;
+	padding:3px;
+
+}
+.button
+{
+	height:30px;
+	padding:5px;
+}
+
+
+  </style>
+   
+  </head>
+
+  <body>
+
+<TABLE BORDER="0" class="container" cellpadding="0" align="center">
+		<TR>
+			<TD>
+ 			<!-- Begin of header area	-->
+			<TABLE WIDTH="100%" BORDER="0" CELLPADDING="0">
+				<TR>
+					<TD WIDTH="20%">
+						<h1>
+						My Project
+						</h1>
+
+					</TD>
+					<TD ALIGN="RIGHT">
+						</a>
+
+					
+						<a href="/users/index">
+							HOME
+						</a>
+						| 
+						<a href="/users/aboutus">
+						ABOUT US 
+						</a>
+						
+						| 
+						<a href="/users/signin">
+						LOGIN
+						</a>
+						 | 
+						<a href="/users/new">						 
+						 SIGNUP
+						</a>
+						 
+						 | 
+						 <a href="/users/contact">						 
+							 CONTACT
+						 </A>
+						 | 
+						 <a href="/users/mailalerts">						 
+							 CHECK MAIL ALERTS
+						 </A>
+					</TD>
+				</TR>
+			</TABLE>
+ 			<!-- End of header area	-->
+
+
+			</TD>			
+		</TR>
+</TABLE>		
+<hr>  
+	<table  class="container" align="center">
+		<tr>
+			<td>
+			    <%= yield %>
+			</td>
+		</tr>
+	</table>
+<hr>  
+	
+  </body>
+</html>
